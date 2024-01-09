@@ -1,0 +1,230 @@
+.main-container {
+    .toolbar-items {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        div {
+            margin-right: 20px;
+        }
+
+        .search-box {
+            width: 353px;
+            margin-right: 0;
+
+            img {
+                position: relative;
+                left: 12px;
+                top: 32px;
+                width: 20px;
+                height: 21px;
+                color: #B8B9BC;
+                font-size: 17px;
+            }
+
+            input {
+                width: 334px;
+                height: 43px;
+                padding: 10px;
+                border-radius: 4px;
+                padding-left: 40px;
+                border: 1px solid #B8B9BC;
+                background: #FFF;
+                vertical-align: middle;
+                margin-bottom: 20px;
+
+            }
+
+            ::placeholder {
+                display: inline-block;
+                color: #B8B9BC;
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                padding-left: 7px
+            }
+        }
+
+        .select-forms {
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+
+            select {
+                width: 209px !important;
+                height: 43px;
+                border-radius: 4px;
+                border: 1px solid #B8B9BC;
+                appearance: none;
+                -webkit-appearance: none;
+                padding-right: 30px;
+                background-color: white;
+                background-image: url('data:image/svg+xml;utf8,<svg fill="lightgray" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+                background-repeat: no-repeat;
+                background-position: right center;
+            }
+
+            select:required:invalid {
+                color: #060C1B;
+
+                padding: 5px;
+            }
+
+            option[value=""][disabled] {
+                display: none;
+            }
+
+            option {
+                color: black;
+            }
+        }
+
+        .date-picker {
+
+            #date {
+                width: 209px;
+                height: 42px;
+                border-radius: 4px;
+                border: 1px solid #B8B9BC;
+                background: #FFF;
+                outline: none;
+                border: 1px solid #aaa;
+                padding: 6px 34px;
+                color: #aaa;
+            }
+
+            .fa-calender {
+                width: 24px;
+                height: 24px;
+                color: #B8B9BC;
+            }
+
+            .date-container {
+                position: relative;
+                float: left;
+
+                .date-text {
+                    position: absolute;
+                    top: 6px;
+                    right: 12px;
+                    color: #aaa;
+                }
+
+                .date-icon {
+                    position: absolute;
+                    top: 13px;
+                    left: 10px;
+                    cursor: pointer;
+                    color: #aaa;
+                }
+            }
+
+        }
+
+        .toggle-button {
+            width: 152px;
+            height: 48px;
+
+            p {
+                margin-top: 2rem;
+                font-size: 0.75rem;
+                text-align: center;
+            }
+
+            .switches-container {
+                width: 152px;
+                position: relative;
+                display: flex;
+                padding: 0;
+                position: relative;
+                background: #FFF;
+                line-height: 3rem;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 4px;
+                border: 2px solid #B8B9BC;
+
+            }
+
+            .switches-container input {
+                visibility: hidden;
+                position: absolute;
+                top: 0;
+            }
+
+            .switches-container label {
+                width: 50%;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                cursor: pointer;
+                color: #060C1B;
+            }
+
+            .switch-wrapper {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 50%;
+                z-index: 3;
+                transition: transform .5s cubic-bezier(.77, 0, .175, 1);
+            }
+
+            .switch {
+                background: #2188D9;
+                width: 100%;
+                height: 100%;
+            }
+
+            .switch div {
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                display: block;
+                color: #FFF;
+                transition: opacity .2s cubic-bezier(.77, 0, .175, 1) .125s;
+                will-change: opacity;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .switches-container input:nth-of-type(1):checked~.switch-wrapper {
+                transform: translateX(0%);
+            }
+
+            .switches-container input:nth-of-type(2):checked~.switch-wrapper {
+                transform: translateX(100%);
+            }
+
+            .switches-container input:nth-of-type(1):checked~.switch-wrapper .switch div:nth-of-type(1) {
+                opacity: 1;
+            }
+
+            .switches-container input:nth-of-type(2):checked~.switch-wrapper .switch div:nth-of-type(2) {
+                opacity: 1;
+            }
+        }
+
+        .export {
+            img {
+                width: 17px;
+                height: 20px;
+            }
+
+            button {
+                color: #2188D9;
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+                cursor: pointer;
+                background: none;
+                border: none;
+            }
+        }
+    }
+}

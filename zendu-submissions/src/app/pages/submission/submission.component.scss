@@ -1,0 +1,108 @@
+.main-container {
+    padding: 21px;
+    .page-title {
+        color: #060C1B;
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+    }
+    .submissions {
+        display: flex;
+        .work-flows {
+            margin-right: 50px;
+            .work-flow-item {
+                width: 459px;
+                height: 144px;
+                border-radius: 4px;
+                border: 1px solid #B8B9BC;
+                background: #FFF;
+                padding:10px;
+                margin-bottom:10px;
+              .work-flow-title {
+                color: #060C1B;
+                font-family: Roboto;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%;
+              }
+              .status-container {
+                padding-top:2px;
+                width: 128px;
+                height: 27px;
+                border-radius: 4px;
+                float: right;
+                text-align: center;
+                border-radius: 4px;
+                &.low-risk-container {
+                  color: #53D86A;
+                  border: 1px solid #53D86A;
+                  background: #D7E5DA;
+                } 
+                &.uncomplete-container {
+                  color: #FF3D00;
+                  border: 1px solid #FF3D00;
+                  background: rgba(255, 61, 0, 0.10);
+                }
+                &.needs-review-container {
+                  color: #B8B9BC;
+                  border: 1px solid #B8B9BC;
+                  background: #ECECED;
+                }
+                .circle-class {
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  border-radius: 50%;
+                  margin:0 6px 0 3px;
+                  vertical-align: middle;
+                }
+                .status-text {
+                  vertical-align: middle;
+                }
+                .uncomplete {
+                    background-color: red;               
+                }
+                .low-risk {
+                  background-color: #53D86A;
+                }
+                .needs-review {
+                  background-color: #B8B9BC;
+                }
+              }
+              .label-containers {
+                margin-top:10px;
+                padding-bottom:3px;
+                .label {
+                    margin:0;
+                    padding:0;
+                    color:#B8B9BC;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 130%;
+                  }
+              }
+              .email {
+                color: #060C1B;
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+              }
+              .date {
+                color: #FF3D00;
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+              }
+            }
+        }
+    }
+}
